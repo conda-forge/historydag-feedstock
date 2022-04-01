@@ -1,5 +1,5 @@
 {% set name = "historydag" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 281e3c9bf262fdfeb704bcae52e278682d0459f50641322b6af7d9f270bd4269
+  sha256: dc02f7d4a92ffda70e76968891ad509faa804b461dd84b3d9d14e1c58ad252a8
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: 'A basic history DAG implementation'
+  summary: A basic history DAG implementation
   description: |
     Historydag is a basic history DAG implementation for Python 3.7+
     written in pure Python. A history DAG object compactly expresses
