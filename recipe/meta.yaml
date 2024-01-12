@@ -26,6 +26,7 @@ requirements:
     - ete3
     - biopython
     - python-graphviz
+    - protobuf
 
 test:
   imports:
