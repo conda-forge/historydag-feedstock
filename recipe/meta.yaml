@@ -1,5 +1,5 @@
 {% set name = "historydag" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5d1f1a154d9b2da950d0469a05b7520bb8ee1bbcff4215ed7f393c21a97ee17
+  sha256: a4decbc4fcc463b588a2c15b359169bd24b83ea7ed7b367de918d96faac33700
 
 build:
   noarch: python
